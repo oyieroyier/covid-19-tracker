@@ -9,12 +9,12 @@ import Button from "./components/Button";
 function App() {
 	return (
     <div className="app">
-      <InfoBox />
-      <Table />
-      <Map />
-      <Login />
       <Home />
+      {/* <Login /> */}
       <Button />
+      {/* <InfoBox />
+      <Table />
+      <Map /> */}
 		</div>
 	);
 }
