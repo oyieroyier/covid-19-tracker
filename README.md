@@ -27,7 +27,7 @@ To run the application locally, follow these steps:
 
     -Clone the repository to your local machine
 
-        git clone https://github.com//covid-19-tracker.git
+        git clone https://github.com/oyieroyier/covid-19-tracker.git
 
     -Navigate to the project directory
 
