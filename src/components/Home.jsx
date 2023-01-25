@@ -1,6 +1,6 @@
 import React from "react";
-import Button from "./components/Button";
-import Login from "./components/Login";
+import Button from "./Button";
+import Login from "./Login";
 
 const Home = () => {
 	return (
