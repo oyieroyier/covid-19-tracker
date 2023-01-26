@@ -56,7 +56,7 @@ form {
 
 .table {
 	height: 500px;
-	max-width: 600px;
+	max-width: 500px;
 	overflow: auto;
 	margin: auto;
 }
@@ -116,47 +116,65 @@ h3 {
 	text-align: center;
 	padding: 20px;
 	font-size: 1.5rem;
+	background: #666;
+	max-width: 50%;
+	margin: auto;
 }
-
 
 /* Info Box */
 
 .infoBox {
-    flex: 1;
-    cursor: pointer;
+	flex: 1;
+	cursor: pointer;
 }
 
-.infoBox:hover{
+.infoBox:hover {
 	box-shadow: 3px 3px 8px #333;
 }
 
 .infoBox:not(:last-child) {
-    margin-right: 10px;
+	margin-right: 10px;
 }
 
 .infoBox--selected {
-    border-top: 10px solid #686a6e;
+	border-top: 10px solid #686a6e;
 }
 
 .infoBox__cases--green {
-    color: darkgreen !important;
+	color: darkgreen !important;
 }
 
 .infoBox__cases {
-    color: #cc1034;
-    font-weight: 600;
-    font-size: 1.75rem;
-    margin-bottom: 0.5rem;
+	color: #cc1034;
+	font-weight: 600;
+	font-size: 1.75rem;
+	margin-bottom: 0.5rem;
 }
 
 .infoBox__total {
-    color: #6c757d;
-    font-weight: 700 !important;
-    font-size: 0.8rem !important;
-    margin-top: 15px !important;
+	color: #6c757d;
+	font-weight: 700 !important;
+	font-size: 0.8rem !important;
+	margin-top: 15px !important;
 }
 
-.message{
+.message {
 	display: none;
 	color: #61dafb;
+}
+
+tr {
+	text-align: center;
+	line-height: 50px;
+}
+tr:hover {
+	background: #999;
+	transform: scale(1.1);
+	border: 1px solid #333;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+td {
+	width: 50%;
 }
