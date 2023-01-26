@@ -9,8 +9,6 @@ const Login = () => {
 
 		login.style.display = "none";
 		search.style.display = "contents";
-
-		alert("Login successful");
 	}
 
 	return (
