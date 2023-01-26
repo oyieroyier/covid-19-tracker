@@ -48,7 +48,7 @@ function App() {
 	}, []);
 	const onCountryChange = async (e) => {
 		const url =
-			e.target.value === "worldwide"
+			e.target.value === "Kenya"
 				? "https://disease.sh/v3/covid-19/all"
 				: `https://disease.sh/v3/covid-19/countries/${e.target.value}`;
 
@@ -62,11 +62,40 @@ function App() {
 				setMapZoom(4);
 			});
 	};
+
+	function removeLogin(e) {
+		e.preventDefault();
+
+		let message = document.querySelector(".message")
+		let login = document.querySelector(".form");
+		login.style.display = "none";
+		message.style.display = "contents";
+		message.style.margin = "20px";
+		message.style.boxShadow = "2px 2px 5px #666";
+		// message.style.d = "contents";
+		// message.style.display = "contents";
+		
+
+		setTimeout(() => {
+			message.style.display = "none"
+		}, 3000);
+
+	}
 	return (
 		<div className="app">
+			<div className="headerrr">
+				<h1>COVID-19 TRACKER</h1>
+				<form className="form">
+					<input type="text" className="inp" placeholder="email" />
+					<input type="text" className="inp" placeholder="password" />
+					<button type="submit" onClick={removeLogin}>
+						Login
+					</button>
+				</form>
+				<p className="message">Login successful</p>
+			</div>
 			<div className="app__left">
 				<div className="app__header">
-					<h1>COVID-19 tracker</h1>
 					<FormControl className="app__dropdown">
 						<Select
 							variant="outlined"
@@ -83,14 +112,14 @@ function App() {
 				<div className="app__stats">
 					<InfoBox
 						onClick={(e) => setCasesType("cases")}
-						title="Coronavirus Cases"
+						title="Reported Cases "
 						active={casesType === "cases"}
 						cases={prettyPrintStat(countryInfo.todayCases)}
 						total={numeral(countryInfo.cases).format("0.0a")}
 					/>
 					<InfoBox
 						onClick={(e) => setCasesType("recovered")}
-						title="Recovered"
+						title="Reported Recoveries"
 						isGreen
 						active={casesType === "recovered"}
 						cases={prettyPrintStat(countryInfo.todayRecovered)}
@@ -98,7 +127,7 @@ function App() {
 					/>
 					<InfoBox
 						onClick={(e) => setCasesType("deaths")}
-						title="Deaths"
+						title="Reported Deaths"
 						active={casesType === "deaths"}
 						cases={prettyPrintStat(countryInfo.todayDeaths)}
 						total={numeral(countryInfo.deaths).format("0.0a")}
@@ -112,10 +141,10 @@ function App() {
 				/>
 			</div>
 			<Card className="app__right">
-				<CardContent>
-					<h3>Live Cases by Country</h3>
+				<CardContent className="hellooo">
+					<h3>Cases by Country</h3>
 					<Table countries={tableData} />
-					<h3 style={{ marginTop: "25px" }}>World wide new {casesType}</h3>
+					<h3 style={{ marginTop: "25px" }}> New {casesType}</h3>
 					<LineGraph casesType={casesType} />
 				</CardContent>
 			</Card>
