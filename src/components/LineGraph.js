@@ -78,21 +78,23 @@ const LineGraph = ({ casesType="cases" }) => {
     }, [casesType])
 
     return (
-        <div>
-            {data?.length > 0 && (
-                <Line 
-                    options={options}
-                    data={{
-                        datasets: [{
-                            backgroundColor: "mediumvioletred",
-                            borderColor: "#333", 
-                            data: data
-                        }]
-                    }}  
-                />
-            )}
-        </div>
-    )
+			<div className='maybe'>
+				{data?.length > 0 && (
+					<Line
+						options={options}
+						data={{
+							datasets: [
+								{
+									backgroundColor: "#666",
+									borderColor: "#cc1034",
+									data: data,
+								},
+							],
+						}}
+					/>
+				)}
+			</div>
+		);
 }
 
 export default LineGraph

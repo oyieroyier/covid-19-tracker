@@ -118,7 +118,7 @@ h3 {
 	font-size: 1.5rem;
 	background: #cc1034;
 	max-width: 70%;
-	margin: auto;
+	margin: 20px auto;
 	border-radius: 8px;
 }
 
@@ -178,4 +178,8 @@ tr:hover {
 
 td {
 	width: 50%;
+}
+
+.maybe {
+	height: 300px;
 }
