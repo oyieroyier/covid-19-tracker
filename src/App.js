@@ -111,7 +111,7 @@ function App() {
 					<InfoBox
 						onClick={(e) => setCasesType("cases")}
 						title="Reported Cases "
-						active={casesType === "cases"}
+						active={casesType === "Cases"}
 						cases={prettyPrintStat(countryInfo.todayCases)}
 						total={numeral(countryInfo.cases).format("0.0a")}
 					/>
@@ -119,14 +119,14 @@ function App() {
 						onClick={(e) => setCasesType("recovered")}
 						title="Reported Recoveries"
 						isGreen
-						active={casesType === "recovered"}
+						active={casesType === "Recovered"}
 						cases={prettyPrintStat(countryInfo.todayRecovered)}
 						total={numeral(countryInfo.recovered).format("0.0a")}
 					/>
 					<InfoBox
 						onClick={(e) => setCasesType("deaths")}
 						title="Reported Deaths"
-						active={casesType === "deaths"}
+						active={casesType === "Deaths"}
 						cases={prettyPrintStat(countryInfo.todayDeaths)}
 						total={numeral(countryInfo.deaths).format("0.0a")}
 					/>
