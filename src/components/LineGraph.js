@@ -70,7 +70,6 @@ const LineGraph = ({ casesType="cases" }) => {
             fetch('https://disease.sh/v3/covid-19/historical/all?lastdays=120')
                 .then(response => response.json())
                 .then(data => {
-                    console.log(data)
                     const chartData = buildChartData(data, casesType)
                     setData(chartData)
             })
@@ -85,8 +84,8 @@ const LineGraph = ({ casesType="cases" }) => {
                     options={options}
                     data={{
                         datasets: [{
-                            backgroundColor: "rgba(204, 16, 52, 0.5)",
-                            borderColor: "#CC1034", 
+                            backgroundColor: "mediumvioletred",
+                            borderColor: "#333", 
                             data: data
                         }]
                     }}  
