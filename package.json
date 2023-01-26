@@ -1,7 +1,8 @@
 {
 	"name": "covid-19-tracker",
 	"version": "0.1.0",
-	"private": true,
+	"homepage": "https://oyieroyier.github.io/covid-19-tracker-gh-pages",
+	"private": false,
 	"dependencies": {
 		"@material-ui/core": "^4.11.3",
 		"@material-ui/icons": "^4.11.2",
@@ -36,5 +37,8 @@
 		"not op_mini all"
 	],
 	"react-leaflet": ">=3.1.0 <3.2.0 || ^3.2.1",
-	"@react-leaflet/core": ">=1.0.0 <1.1.0 || ^1.1.1"
+	"@react-leaflet/core": ">=1.0.0 <1.1.0 || ^1.1.1",
+	"devDependencies": {
+		"gh-pages": "^5.0.0"
+	}
 }
