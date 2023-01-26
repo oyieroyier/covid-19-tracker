@@ -23,9 +23,9 @@
 		"predeploy": "npm run build",
 		"deploy": "gh-pages -d build",
 		"start": "react-scripts --openssl-legacy-provider start",
-		"build": "SET NODE_OPTIONS=--openssl-legacy-provider && react-scripts build",
-		"test": "SET NODE_OPTIONS=--openssl-legacy-provider && react-scripts test",
-		"eject": "SET NODE_OPTIONS=--openssl-legacy-provider && react-scripts eject"
+		"build": "set NODE_OPTIONS=--openssl-legacy-provider && react-scripts build",
+		"test": "set NODE_OPTIONS=--openssl-legacy-provider && react-scripts test",
+		"eject": "set NODE_OPTIONS=--openssl-legacy-provider && react-scripts eject"
 	},
 	"eslintConfig": {
 		"extends": [
