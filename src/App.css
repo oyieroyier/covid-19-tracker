@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Kavoon&family=Sanchez&display=swap");
+* {
+	font-family: "Sanchez", serif;
+}
+form {
+	padding: 10px;
+}
+
+.input {
+	margin: 10px;
+	border-radius: 8px;
+	border: none;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	background: #333;
+}
+#search {
+	display: flex;
+}
+
+#search input {
+	margin-right: auto;
+	min-width: 50%;
+}
+
+#login-page {
+	display: none;
+}
+
+.login-btn {
+	font-size: 1.25rem;
+	border: none;
+	background: none;
+	color: #61dafb;
+	padding: 5px;
+	font-weight: bold;
+	margin: 20px 50px 0 0;
+	cursor: pointer;
+}
+
+.login-btn:hover {
+	color: #a9dceb;
+	transform: scale(1.1);
+}
+
+#fom {
+	margin-left: auto;
+}
+
+#search input {
+	border-style: none;
+}
+
+.table {
+	height: 500px;
+	max-width: 500px;
+	overflow: auto;
+	margin: auto;
+}
+
+.hellooo {
+	border-radius: 10px;
+	/* max-width: 600px; */
+	margin: auto;
+}
+
+.chartjs-size-monitor {
+	height: 300px;
+}
+
+.app__stats {
+	display: flex;
+}
+
+.headerrr {
+	display: flex;
+	justify-content: space-between;
+	background: #333;
+}
+
+.headerrr h1 {
+	font-size: 2rem;
+	padding: 15px;
+	color: aliceblue;
+}
+.headerrr form {
+	display: flex;
+	height: 50%;
+	margin-top: 20px;
+}
+
+.headerrr input {
+	display: block;
+	margin: 5px;
+	border-radius: 10px;
+}
+
+.headerrr form button {
+	padding: 10px;
+	margin: 10px 5px;
+	cursor: pointer;
+	border-radius: 10px;
+	background-color: #666;
+	color: aliceblue;
+}
+
+.headerrr form button:hover {
+	background-color: #999;
+	color: aquamarine;
+}
+
+h3 {
+	text-align: center;
+	padding: 20px;
+	font-size: 1.5rem;
+	background: #cc1034;
+	max-width: 70%;
+	margin: auto;
+	border-radius: 8px;
+}
+
+/* Info Box */
+
+.infoBox {
+	flex: 1;
+	cursor: pointer;
+}
+
+.infoBox:hover {
+	box-shadow: 3px 3px 8px #333;
+}
+
+.infoBox:not(:last-child) {
+	margin-right: 10px;
+}
+
+.infoBox--selected {
+	border-top: 10px solid #686a6e;
+}
+
+.infoBox__cases--green {
+	color: darkgreen !important;
+}
+
+.infoBox__cases {
+	color: #cc1034;
+	font-weight: 600;
+	font-size: 1.75rem;
+	margin-bottom: 0.5rem;
+}
+
+.infoBox__total {
+	color: #6c757d;
+	font-weight: 700 !important;
+	font-size: 0.8rem !important;
+	margin-top: 15px !important;
+}
+
+.message {
+	display: none;
+	color: #61dafb;
+}
+
+tr {
+	text-align: center;
+	line-height: 50px;
+}
+tr:hover {
+	background: #999;
+	transform: scale(1.1);
+	border: 1px solid #333;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+td {
+	width: 50%;
+}
