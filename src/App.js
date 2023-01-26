@@ -17,7 +17,7 @@ import "leaflet/dist/leaflet.css";
 
 function App() {
 	const [countries, setCountries] = useState([]);
-	const [country, setCountry] = useState("worldwide");
+	const [country, setCountry] = useState("kenya");
 	const [countryInfo, setCountryInfo] = useState({});
 	const [tableData, setTableData] = useState([]);
 	const [mapCenter, setMapCenter] = useState({ lat: 34.80746, lng: -40.4796 });
@@ -66,7 +66,7 @@ function App() {
 	function removeLogin(e) {
 		e.preventDefault();
 
-		let message = document.querySelector(".message")
+		let message = document.querySelector(".message");
 		let login = document.querySelector(".form");
 		login.style.display = "none";
 		message.style.display = "contents";
@@ -74,12 +74,10 @@ function App() {
 		message.style.boxShadow = "2px 2px 5px #666";
 		// message.style.d = "contents";
 		// message.style.display = "contents";
-		
 
 		setTimeout(() => {
-			message.style.display = "none"
+			message.style.display = "none";
 		}, 3000);
-
 	}
 	return (
 		<div className="app">
@@ -102,7 +100,7 @@ function App() {
 							value={country}
 							onChange={onCountryChange}
 						>
-							<MenuItem value="worldwide">Worldwide</MenuItem>
+							<MenuItem value="kenya">Global</MenuItem>
 							{countries.map((country) => (
 								<MenuItem value={country.value}>{country.name}</MenuItem>
 							))}

@@ -13,8 +13,6 @@ const Home = () => {
 				<Button />
 			</div>
 
-			{/* <h2>H2 Header</h2> */}
-			{/* <Product /> */}
 		</div>
 	);
 };
