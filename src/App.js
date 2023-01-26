@@ -66,8 +66,20 @@ function App() {
 	function removeLogin(e) {
 		e.preventDefault();
 
+		let message = document.querySelector(".message")
 		let login = document.querySelector(".form");
 		login.style.display = "none";
+		message.style.display = "contents";
+		message.style.margin = "20px";
+		message.style.boxShadow = "2px 2px 5px #666";
+		// message.style.d = "contents";
+		// message.style.display = "contents";
+		
+
+		setTimeout(() => {
+			message.style.display = "none"
+		}, 3000);
+
 	}
 	return (
 		<div className="app">
@@ -80,6 +92,7 @@ function App() {
 						Login
 					</button>
 				</form>
+				<p className="message">Login successful</p>
 			</div>
 			<div className="app__left">
 				<div className="app__header">
