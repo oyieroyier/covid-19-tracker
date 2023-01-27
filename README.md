@@ -1,69 +1,90 @@
-## Covid-19 Tracker
+# COVID-19 Tracker
 
+## Description
 
-## Description 
-This project is a web-based application that allows users to track the spread of the Covid-19 virus. The application displays data such as the number of confirmed cases, deaths, and recoveries for various countries and regions. The data is updated in real-time and is sourced from reputable sources such as the World Health Organization and the Center for Disease Control and Prevention.
+This project is a web-based application that allows users to track the spread of the COVID-19 virus.
+
+The application displays dynamic data such as:
+
+- The number of confirmed cases
+- The number of confirmed deaths, and
+- The number of confirmed recoveries for various countries and regions.
+
+The data is fetched from an API and updated in real-time. It is sourced from reputable sources such as the World Health Organization (WHO) and the Center for Disease Control and Prevention (CDC).
 
 ## Features
 
-    Display of data for various countries and regions
-    Real-time updates of data
-    Historical data visualization
-    Global statistics for confirmed cases, deaths, and recoveries
-    Option to compare statistics of multiple countries
-    Mobile-friendly design
-    Push notifications for new cases and deaths
+Display of data for various countries and regions
+
+Real-time updates of data
+
+Historical data visualization
+
+Global statistics for confirmed cases, deaths, and recoveries
+
+Mobile-friendly design
 
 ## Technologies Used
 
-    React.js for the front-end
-    Node.js for the back-end
-    Chart.js for data visualization
-    Material-UI for styling
+React JS for the front-end
+Chart JSS for data visualization
+Vanilla CSS and Material-UI for styling
+
+## Live Link
+
+[CLICK HERE](https://iridescent-bublanina-ed051d.netlify.app/)
 
 ## Installation
 
 To run the application locally, follow these steps:
 
-    -Clone the repository to your local machine
+- Clone the repository to your local machine
 
-        git clone https://github.com/oyieroyier/covid-19-tracker.git
+```bash
+    git clone https://github.com/oyieroyier/covid-19-tracker.git
+```
 
-    -Navigate to the project directory
+- Navigate to the project directory
 
-        cd covid-19-tracker
+```bash
+    cd covid-19-tracker
+```
 
-    -Install the necessary dependencies
+- Install the necessary dependencies
 
-        npm install
+```bash
+    npm install
+```
 
-    -Start the development server
+- Start the development server
 
-        npm start
+```bash
+    npm start
+```
 
-    -The application should now be running on http://localhost:3000/
+- The application should now be running on http://localhost:3000/
 
+In case the application is not running yet, enter the following command:
+```bash
+    npm install && npm update && export NODE_OPTIONS=--openssl-legacy-provider && npm start
+```
 ## Contributing
 
 We welcome contributions to this project. If you would like to contribute, please fork the repository and create a pull request with your changes.
 
-
 ## Authors
 
 This project was contributed to by:
-  -Bob Oyier:Project Lead,Developer
-    (https://github.com/oyieroyier)
-
-  -Feisal Bireh:UI Designer
-    (https://github.com/Feisalbireh)
-
-  -Elvis Rono:Specialist
-    (https://github.com/kericho)
-
-  -Mohamed Khadar: Performance Optimiser
-    (https://github.com/Khadaryussuf)
+- [Bob Oyier](https://github.com/oyieroyier) - Project Lead, Developer & UI/UX Designer
+<br>
+- [Feisal Bireh](https://github.com/Feisalbireh) - UI/UX Designer
+<br>
+- [Elvis Rono](https://github.com/kericho) - Chart JS Specialist
+<br>
+- [Mohamed Khadar](https://github.com/Khadaryussuf) - Performance Optimiser
 
 ## License
 
-This project is licensed under the MIT License. See the LICENSE file for more details.
+### MIT License
 
+[![License: MIT](https://img.shields.io/badge/License-MIT%20License-blue)](https://opensource.org/licenses/MIT)
