@@ -76,11 +76,8 @@ We welcome contributions to this project. If you would like to contribute, pleas
 
 This project was contributed to by:
 - [Bob Oyier](https://github.com/oyieroyier) - Project Lead, Developer & UI/UX Designer
-<br>
 - [Feisal Bireh](https://github.com/Feisalbireh) - UI/UX Designer
-<br>
 - [Elvis Rono](https://github.com/kericho) - Chart JS Specialist
-<br>
 - [Mohamed Khadar](https://github.com/Khadaryussuf) - Performance Optimiser
 
 ## License
